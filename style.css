@@ -6,12 +6,13 @@ html, body {
 
 body {
   display: flex;
-  justify-content: center;  /* 水平方向中央寄せ */
-  align-items: center;      /* 垂直方向中央寄せ */
-  height: 100vh;            /* ビューポート高さ */
-  background-color: white;  /* 必要なら背景色 */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-canvas {
-  display: block;
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
