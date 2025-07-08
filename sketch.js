@@ -98,7 +98,7 @@ function draw() {
   fill(0);
   noStroke();
   textSize(14);
-  text(`Stage: ${stage}`, 10, height - 10);
+  text(`Stage: ${stage}`, 10, height - 20);
 }
 
 // ==== 軌跡描画・記録 ====
