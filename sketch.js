@@ -22,14 +22,15 @@ let lastBlockTime = 0;
 // ==== p5.js ====
 
 function setup() {
-  createCanvas(cols * cellSize, rows * cellSize);
+  let canvas = createCanvas(cols * cellSize, rows * cellSize);
+  canvas.parent("container");  // ここでcanvasをdiv#containerに追加
   frameRate(60);
   generateMaze();
   player = { i: 0, j: 0 };
   goal = { i: cols - 1, j: rows - 1 };
   visitedTrail.clear();
   markVisited(player.i, player.j);
-  spawnBlock(); // 最初のブロック
+  spawnBlock();
 }
 
 function draw() {
